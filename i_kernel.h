@@ -8,8 +8,8 @@
 class i_kernel : public i_singleArgumentFunction
 {
   public:
-    virtual static double getW() = 0;
-    virtual static double getU() = 0;
+    virtual double getW() = 0;
+    virtual double getU() = 0;
 };
 
 typedef std::shared_ptr<i_kernel> kernelPtr;
