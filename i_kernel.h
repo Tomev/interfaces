@@ -8,7 +8,25 @@
 class i_kernel : public i_singleArgumentFunction
 {
   public:
+
+  /** Kernel specific parameter given by equation (TeX):
+   *
+   *  W(K) = \int^\infty_{-\infty} K^2(x) dx,
+   *
+   *  where K denotes kernel.
+   *
+   *  More info about that in Kernel Estimators in Systems Analysis.
+   */
     virtual double getW() = 0;
+
+  /** Kernel specific parameter given by equation (TeX):
+   *
+   *  U(K) = \int^\infty_{-\infty} x^2 K(x) dx,
+   *
+   *  where K denotes kernel.
+   *
+   *  More info about that in Kernel Estimators in Systems Analysis.
+   */
     virtual double getU() = 0;
 };
 
