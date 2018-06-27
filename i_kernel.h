@@ -1,8 +1,6 @@
 #ifndef KERNELDENSITYESTIMATOR_I_KERNEL_H
 #define KERNELDENSITYESTIMATOR_I_KERNEL_H
 
-#include <memory>
-
 #include "i_singleArgumentFunction.h"
 
 class i_kernel : public i_singleArgumentFunction
