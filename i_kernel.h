@@ -34,8 +34,8 @@ enum kernelIDs
 {
   NORMAL        = 0,
   EPANECZNIKOW  = 1,
-  TRIANGLE      = 2,
-  DULL          = 3
+  TRIANGULAR    = 2,
+  LINEAR        = 3
 };
 
 #endif //KERNELDENSITYESTIMATOR_I_KERNEL_H
