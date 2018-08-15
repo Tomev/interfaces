@@ -2,15 +2,14 @@
 #define INTERFACES_I_CLUSTERINGALGORITHM_H
 
 #include <vector>
-#include "i_clusterable.h"
-
+#include "i_cluster.h"
 
 /**
  *  All clustering algorithms interface.
  */
 class i_clusteringAlgorithm {
   public:
-    virtual std::vector<cluster> groupObjects(std::vector<i_clusterable>) = 0;
+    virtual std::vector<clusterPtr> groupObjects(std::vector<clusterPtr>) = 0;
 
 };
 
