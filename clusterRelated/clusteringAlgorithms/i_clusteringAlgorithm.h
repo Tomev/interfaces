@@ -10,7 +10,6 @@
 class i_clusteringAlgorithm {
   public:
     virtual std::vector<clusterPtr> groupObjects(std::vector<clusterPtr>) = 0;
-
 };
 
 #endif //INTERFACES_I_CLUSTERINGALGORITHM_H
