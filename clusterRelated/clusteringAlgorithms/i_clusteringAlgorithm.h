@@ -2,7 +2,7 @@
 #define INTERFACES_I_CLUSTERINGALGORITHM_H
 
 #include <vector>
-#include "i_cluster.h"
+#include "../i_cluster.h"
 
 /**
  *  All clustering algorithms interface.
