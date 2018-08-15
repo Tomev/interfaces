@@ -4,8 +4,8 @@
 #include <memory>
 #include <vector>
 #include "i_clusterable.h"
-#include "i_weightable.h"
-#include "i_countable.h"
+#include "../i_weightable.h"
+#include "../i_countable.h"
 
 class i_cluster;
 typedef std::shared_ptr<i_cluster> clusterPtr;
