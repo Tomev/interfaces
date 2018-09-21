@@ -5,7 +5,7 @@
 
 class i_clusterFactory {
   public:
-    clusterablePtr createObject
+    clusterablePtr createObject();
     clusterPtr createCluster(clusterablePtr object);
 };
 
