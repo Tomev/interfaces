@@ -16,6 +16,13 @@ typedef std::shared_ptr<i_cluster> clusterPtr;
 class i_cluster: public i_weightable, public i_countable {
   public:
     virtual std::vector<clusterPtr> getSubclusters() = 0;
+
+    unsigned int addSubcluster(clusterPtr subcluster) {
+      subclusters.push_back(subcluster);
+      return subclusters.size();
+    };
+
+
   protected:
     std::vector<clusterPtr> subclusters;
 };

@@ -14,4 +14,6 @@ class i_clusterDistanceMeasure {
     std::shared_ptr<i_objectDistanceMeasure> objectDistanceMeasure;
 };
 
+typedef std::shared_ptr<i_clusterDistanceMeasure> clusterDistanceMeasurePtr;
+
 #endif //INTERFACES_I_CLUSTERDISTANCEMEASURE_H
