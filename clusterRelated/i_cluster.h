@@ -13,7 +13,7 @@ typedef std::shared_ptr<i_cluster> clusterPtr;
 /**
  *  Basic cluster interface, taking into account, that clusters can be weighted.
  */
-class i_cluster: protected i_weightable, protected i_countable {
+class i_cluster: public i_weightable, public i_countable {
   public:
     virtual std::vector<clusterPtr> getSubclusters() = 0;
   protected:
