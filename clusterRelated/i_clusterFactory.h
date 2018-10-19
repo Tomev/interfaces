@@ -5,8 +5,8 @@
 
 class i_clusterFactory {
   public:
-    clusterablePtr createObject();
-    clusterPtr createCluster(clusterablePtr object);
+    virtual clusterablePtr createObject() = 0;
+    virtual clusterPtr createCluster(clusterablePtr object) = 0;
 };
 
 #endif //KMEANS_I_CLUSTERFACTORY_H
