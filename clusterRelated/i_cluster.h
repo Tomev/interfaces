@@ -22,12 +22,17 @@ class i_cluster: public i_weightable, public i_countable {
       return _subclusters.size();
     };
 
+    void clearSubclusters(){_subclusters.clear();}
+    void updateMean();
+
     clusterablePtr getMean() {return _mean;};
+    clusterablePtr getObject(){return _object};
 
 
   protected:
     std::vector<clusterPtr> _subclusters;
     clusterablePtr _mean;
+    clusterablePtr _object;
 };
 
 
