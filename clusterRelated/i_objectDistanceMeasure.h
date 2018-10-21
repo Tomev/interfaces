@@ -11,4 +11,6 @@ class i_objectDistanceMeasure {
     virtual double getObjectsDistance(clusterablePtr o1, clusterablePtr o2) = 0;
 };
 
+typedef std::shared_ptr<i_objectDistanceMeasure> objectDistanceMeasurePtr;
+
 #endif //INTERFACES_I_OBJECTDISTANCEMEASURE_H
