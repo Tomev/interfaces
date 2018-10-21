@@ -18,13 +18,16 @@ class i_cluster: public i_weightable, public i_countable {
     virtual std::vector<clusterPtr> getSubclusters() = 0;
 
     unsigned int addSubcluster(clusterPtr subcluster) {
-      subclusters.push_back(subcluster);
-      return subclusters.size();
+      _subclusters.push_back(subcluster);
+      return _subclusters.size();
     };
+
+    clusterablePtr getMean() {return _mean;};
 
 
   protected:
-    std::vector<clusterPtr> subclusters;
+    std::vector<clusterPtr> _subclusters;
+    clusterablePtr _mean;
 };
 
 
