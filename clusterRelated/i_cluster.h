@@ -25,8 +25,8 @@ class i_cluster: public i_weightable, public i_countable {
     void clearSubclusters(){_subclusters.clear();}
     void updateMean();
 
-    clusterablePtr getMean() {return _mean;};
-    clusterablePtr getObject(){return _object};
+    clusterablePtr getMean() {return _mean;}
+    clusterablePtr getObject(){return _object;}
 
 
   protected:
